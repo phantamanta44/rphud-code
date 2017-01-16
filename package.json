@@ -1,0 +1,30 @@
+{
+    "name": "rphud-code",
+    "displayName": "rphud-code",
+    "description": "RPHud syntax highlighting for VSCode",
+    "version": "0.0.1",
+    "publisher": "phantamanta44",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "rphud",
+            "aliases": ["RPHud", "rphud"],
+            "extensions": [".rphud"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "rphud",
+            "scopeName": "source.rphud",
+            "path": "./syntaxes/rphud.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "rphud",
+            "path": "./snippets/rphud-snippets.json"
+        }]
+    }
+}

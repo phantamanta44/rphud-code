@@ -1,0 +1,83 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "RPHud",
+	"foldingStartMarker": "^[ \t]*-[ \t]*[a-zA-Z]+[ \t]*-[ \t]*$",
+	"foldingStopMarker": "^.+(?=\n+^[ \t]*-[ \t]*[a-zA-Z]+[ \t]*-[ \t]*$)",
+	"patterns": [
+		{ "include": "#comments" },
+		{ "include": "#scopes" },
+		{ "include": "#linekw" },
+		{ "include": "#enumconsts" },
+		{ "include": "#constants" },
+		{ "include": "#numbers" },
+		{ "include": "#resloc" },
+		{ "include": "#propnames" },
+		{ "include": "#functioncall" },
+		{ "include": "#stringinterp" }
+	],
+	"repository": {
+		"scopes": {
+			"patterns": [{
+				"name": "entity.name.type.rphud",
+				"match": "-[ \t]*(cancels|imports|definitions|components)[ \t]*-"
+			}]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.number-sign.rphud",
+				"begin": "^[ \t]*#",
+				"end": "$"
+			}]
+		},
+		"stringinterp": {
+			"patterns": [{
+				"name": "string.interpolated.rphud",
+				"begin": "\\$\\{",
+				"end": "\\}"
+			}]
+		},
+		"functioncall": {
+			"patterns": [{
+				"name": "entity.name.function.rphud",
+				"match": "[a-zA-Z_]+(?=\\()"
+			}]
+		},
+		"enumconsts": {
+			"patterns": [{
+				"name": "constant.language.rphud",
+				"match": "true|false|top[\\- ]left|top|up|top[\\- ]right|left|middle|center|right|bottom[\\- ]right|bottom|down|bottom[\\- ]left"
+			}]
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "constant.numeric.rphud",
+				"match": "(^|(?<=\\W))\\d+(?=\\W)"
+			}]
+		},
+		"resloc": {
+			"patterns": [{
+				"name": "string.other.rphud",
+				"match": "\\w+:.+"
+			}]
+		},
+		"constants": {
+			"patterns": [{
+				"name": "constant.language.rphud",
+				"match": "(^|(?<=\\W))(systime|time|daytime|vp_width|vp_height|hp|hp_max|xp|level|score|x|y|z|vel_x|vel_y|vel_z|sneaking|sprinting|pitch|yaw|angle|food|food_max|sat|held_item|held_count)(?=\\W)"
+			}]
+		},
+		"linekw": {
+			"patterns": [{
+				"name": "keyword.control.rphud",
+				"match": "^[ \t]*[\\w ]+[ \t]*$"
+			}]
+		},
+		"propnames": {
+			"patterns": [{
+				"name": "variable.parameter.rphud",
+				"match": "^[ \t]*\\w+(?=[ \t]*=)"
+			}]
+		}
+	},
+	"scopeName": "source.rphud"
+}

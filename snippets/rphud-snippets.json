@@ -1,0 +1,132 @@
+{
+    "systime": {
+        "description": "The current system time, in milliseconds.",
+        "prefix": "systime",
+        "body": "systime"
+    },
+    "time": {
+        "description": "The current time in the world.",
+        "prefix": "time",
+        "body": "time"
+    },
+    "daytime": {
+        "description": "The current time of day in the world, from 0 to 24000.",
+        "prefix": "daytime",
+        "body": "daytime"
+    },
+    "vp_width": {
+        "description": "The width of the game window.",
+        "prefix": "vp_width",
+        "body": "vp_width"
+    },
+    "vp_height": {
+        "description": "The height of the game window.",
+        "prefix": "vp_height",
+        "body": "vp_height"
+    },
+    "hp": {
+        "description": "The current player health.",
+        "prefix": "hp",
+        "body": "hp"
+    },
+    "hp_max": {
+        "description": "The current player maximum health.",
+        "prefix": "hp_max",
+        "body": "hp_max"
+    },
+    "xp": {
+        "description": "The player's current experience bar percentage, from 0 to 1.",
+        "prefix": "xp",
+        "body": "xp"
+    },
+    "level": {
+        "description": "The player's current experience level.",
+        "prefix": "level",
+        "body": "level"
+    },
+    "score": {
+        "description": "The player's current score.",
+        "prefix": "score",
+        "body": "score"
+    },
+    "x": {
+        "description": "The player's X coordinate.",
+        "prefix": "x",
+        "body": "x"
+    },
+    "y": {
+        "description": "The player's Y coordinate.",
+        "prefix": "y",
+        "body": "y"
+    },
+    "z": {
+        "description": "The player's Z coordinate.",
+        "prefix": "z",
+        "body": "z"
+    },
+    "vel_x": {
+        "description": "The player's X velocity.",
+        "prefix": "vel_x",
+        "body": "vel_x"
+    },
+    "vel_y": {
+        "description": "The player's Y velocity.",
+        "prefix": "vel_y",
+        "body": "vel_y"
+    },
+    "vel_z": {
+        "description": "The player's Z velocity.",
+        "prefix": "vel_z",
+        "body": "vel_z"
+    },
+    "sneaking": {
+        "description": "1 if the player is sneaking; otherwise, 0.",
+        "prefix": "sneaking",
+        "body": "sneaking"
+    },
+    "sprinting": {
+        "description": "1 if the player is sprinting; otherwise, 0.",
+        "prefix": "sprinting",
+        "body": "sprinting"
+    },
+    "pitch": {
+        "description": "The player's current pitch, in degrees.",
+        "prefix": "pitch",
+        "body": "pitch"
+    },
+    "yaw": {
+        "description": "The player's current yaw, in degrees.",
+        "prefix": "yaw",
+        "body": "yaw"
+    },
+    "angle": {
+        "description": "The player's current angle on the XZ plane, in degrees.",
+        "prefix": "angle",
+        "body": "angle"
+    },
+    "food": {
+        "description": "The player's current food level.",
+        "prefix": "food",
+        "body": "food"
+    },
+    "food_max": {
+        "description": "The player's maximum food level.",
+        "prefix": "food_max",
+        "body": "food_max"
+    },
+    "sat": {
+        "description": "The player's saturation level.",
+        "prefix": "sat",
+        "body": "sat"
+    },
+    "held_item": {
+        "description": "The ID of the item the player's currently holding.",
+        "prefix": "held_item",
+        "body": "held_item"
+    },
+    "held_count": {
+        "description": "The count of the items the player's currently holding.",
+        "prefix": "held_count",
+        "body": "held_count"
+    }
+}
